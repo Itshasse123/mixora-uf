@@ -67,7 +67,7 @@ const Index = () => {
       name: "Elias Sethson",
       role: "VD",
       image: teamMember3,
-      description: "Elias Sethson även känd som Mixora UFs VD spelar Golf på fritiden och unnar en Mixora kaka när han ska spela turnering.",
+      description: "Elias Sethson även känd som Mixora UFs VD, spelar golf på fritiden och unnar sig en Mixora kaka när han ska spela turnering.",
     },
     {
       id: 4,
