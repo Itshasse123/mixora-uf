@@ -136,7 +136,7 @@ const Index = () => {
               <Palette className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Kvalitet</h3>
-            <p className="text-muted-foreground">Våra bakmixer lol inehåller kvalitativa råvaror.</p>
+            <p className="text-muted-foreground">Våra bakmixer inehåller kvalitativa råvaror.</p>
           </div>
         </div>
       </section>
