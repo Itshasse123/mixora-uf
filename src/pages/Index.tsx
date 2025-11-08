@@ -74,7 +74,7 @@ const Index = () => {
       name: "Alfred Cedvin",
       role: "Ekonomi och produktansvarig",
       image: teamMember4,
-      description: "Alfred Cedvin även känd som Mixora UFs Mulletman brukar unna sig en kaka när han tänker på att han skapade mulletens frangång.",
+      description: "Alfred Cedvin även känd som Mixora UFs Mulletman brukar unna sig en kaka när han tänker på att han skapade mulletens framgång.",
     },
   ];
 
