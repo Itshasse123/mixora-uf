@@ -2,14 +2,14 @@ import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
-export default function Kladdkaka() {
+export default function Kanelcookie() {
   const navigate = useNavigate();
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const key = params.get("key");
 
   // ✅ Blockera om ingen eller fel key
-  if (key !== "mixorauf000kladdcookie") {
+  if (key !== "mixorauf000kanelcookie") {
     return <Navigate to="/" replace />;
   }
 

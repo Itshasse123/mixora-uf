@@ -2,14 +2,14 @@ import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
-export default function Kladdkaka() {
+export default function Pepparkaka() {
   const navigate = useNavigate();
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const key = params.get("key");
 
   // ✅ Blockera om ingen eller fel key
-  if (key !== "mixorauf000kladdcookie") {
+  if (key !== "mixorauf000pepparcookie") {
     return <Navigate to="/" replace />;
   }
 
@@ -26,7 +26,7 @@ export default function Kladdkaka() {
         Tillbaka
       </Button>
 
-      <h1 className="text-4xl font-bold mb-8 text-center">Kladdkaka Recept</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">Pepparkakssockerkaka</h1>
 
       <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
         <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
