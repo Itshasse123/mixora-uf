@@ -1,24 +1,49 @@
-export default function Page() {
-  return (
-    <div style={{ padding: "2rem", maxWidth: "600px", margin: "0 auto" }}>
-      <h1>Kladdkaka Recept</h1>
-      <p><strong>Ingredienser:</strong></p>
-      <ul>
-        <li>100g smör</li>
-        <li>2.5dl socker</li>
-        <li>2 ägg</li>
-        <li>1.5dl mjöl</li>
-        <li>4 msk kakao</li>
-        <li>1 tsk vaniljsocker</li>
-      </ul>
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
-      <p><strong>Gör så här:</strong></p>
-      <ol>
-        <li>Sätt ugnen på 175°C.</li>
-        <li>Smält smör och vispa ihop socker + ägg.</li>
-        <li>Blanda alla ingredienser. Häll i form.</li>
-        <li>Grädda 20 minuter. Färdig.</li>
-      </ol>
-    </div>
+export default function Kladdkaka() {
+  const navigate = useNavigate();
+
+  return (
+    <main className="max-w-3xl mx-auto py-20 px-4">
+
+      {/* Tillbaka-knapp */}
+      <Button
+        size="lg"
+        variant="outline"
+        className="fixed top-4 right-4 z-50 shadow-lg bg-[#4B2A1A] text-white hover:bg-[#3d2215]"
+        onClick={() => navigate("/")}
+      >
+        <ArrowLeft className="h-5 w-5 mr-2" />
+        Tillbaka
+      </Button>
+
+      <h1 className="text-4xl font-bold mb-8 text-center">Kladdkaka Recept</h1>
+
+      <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
+
+        <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
+        <ul className="space-y-1 text-lg">
+          <li>100 g smör</li>
+          <li>2.5 dl socker</li>
+          <li>2 ägg</li>
+          <li>1.5 dl vetemjöl</li>
+          <li>4 msk kakao</li>
+          <li>1 tsk vaniljsocker</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-8 mb-4">Gör så här</h2>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
+          <li>Sätt ugnen på 175°C.</li>
+          <li>Smält smöret.</li>
+          <li>Vispa ihop socker och ägg i en bunke.</li>
+          <li>Rör ner smör och torra ingredienser.</li>
+          <li>Häll smeten i form.</li>
+          <li>Grädda ca 20 minuter för kladdig konsistens.</li>
+        </ol>
+
+      </div>
+    </main>
   );
 }
