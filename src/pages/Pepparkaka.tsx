@@ -26,7 +26,7 @@ export default function Pepparkaka() {
         Tillbaka
       </Button>
 
-      <h1 className="text-4xl font-bold mb-8 text-center">Pepparkakssockerkaka</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">Pepparkakssockerkaka recept</h1>
 
       <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
         <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
