@@ -9,8 +9,9 @@ import OmOss from "./pages/OmOss";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 import Support from "./pages/Support";
-import Kladdkaka from "./pages/Kladdkaka"; 
-import Kladdkaka from "./pages/pepparkaka";
+import Kladdkaka from "./pages/Kladdkaka";
+import Pepparkaka from "./pages/Pepparkaka";
+import Kanelcoockie from "./pages/Kanelcoockie";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -20,17 +21,16 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/omoss" element={<OmOss />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="/support" element={<Support />} />
-          <Route path="/kladdkaka-recept" element={<Kladdkaka />} /> {/*  */}
-          <Route path="/pepparkaka" element={<Pepparkaka />} />
-          <Route path="/pepparkaka" element={<Kanelcookie />} />
-
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+ <Routes>
+  <Route path="/" element={<Index />} />
+  <Route path="/omoss" element={<OmOss />} />
+  <Route path="/product/:id" element={<ProductDetail />} />
+  <Route path="/support" element={<Support />} />
+  <Route path="/kladdkaka-recept" element={<Kladdkaka />} />
+  <Route path="/pepparkaka" element={<Pepparkaka />} />
+  <Route path="/kanelcoockie" element={<Kanelcoockie />} />
+  <Route path="*" element={<NotFound />} />
+</Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
