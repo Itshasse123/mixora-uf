@@ -9,7 +9,7 @@ import OmOss from "./pages/OmOss";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 import Support from "./pages/Support";
-import Kladdkaka from "./pages/Kladdkaka";
+import Kladdkaka from "./pages/Kladdkaka"; // ✅ FIX HERE
 
 const queryClient = new QueryClient();
 
@@ -25,8 +25,7 @@ const App = () => (
           <Route path="/omoss" element={<OmOss />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/support" element={<Support />} />
-          <Route path="/kladdkaka-recept" element={<Kladdkaka />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/kladdkaka-recept" element={<Kladdkaka />} /> {/* ✅ */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

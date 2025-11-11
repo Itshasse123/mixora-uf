@@ -1,9 +1,17 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 export default function Kladdkaka() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const key = params.get("key");
+
+  // ✅ Blockera om ingen eller fel key
+  if (key !== "mixora2025cookie") {
+    return <Navigate to="/" replace />;
+  }
 
   return (
     <main className="max-w-3xl mx-auto py-20 px-4">
@@ -13,8 +21,7 @@ export default function Kladdkaka() {
         size="lg"
         variant="outline"
         className="fixed top-4 right-4 z-50 shadow-lg bg-[#4B2A1A] text-white hover:bg-[#3d2215]"
-        onClick={() => navigate("/")}
-      >
+        onClick={() => navigate("/")}>
         <ArrowLeft className="h-5 w-5 mr-2" />
         Tillbaka
       </Button>
@@ -22,7 +29,6 @@ export default function Kladdkaka() {
       <h1 className="text-4xl font-bold mb-8 text-center">Kladdkaka Recept</h1>
 
       <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
-
         <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
         <ul className="space-y-1 text-lg">
           <li>100 g smör</li>
@@ -42,7 +48,6 @@ export default function Kladdkaka() {
           <li>Häll smeten i form.</li>
           <li>Grädda ca 20 minuter för kladdig konsistens.</li>
         </ol>
-
       </div>
     </main>
   );
