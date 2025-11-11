@@ -26,27 +26,25 @@ export default function () {
         Tillbaka
       </Button>
 
-      <h1 className="text-4xl font-bold mb-8 text-center">Kanelkakor</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">Kanelbullekaka recept</h1>
 
       <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
         <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
         <ul className="space-y-1 text-lg">
-          <li>100 g smör</li>
-          <li>2.5 dl socker</li>
+          <li>200 g smör</li>
           <li>2 ägg</li>
-          <li>1.5 dl vetemjöl</li>
-          <li>4 msk kakao</li>
-          <li>1 tsk vaniljsocker</li>
+          <li>Kanelbullekakmixen</li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Gör så här</h2>
         <ol className="list-decimal list-inside space-y-2 text-lg">
-          <li>Sätt ugnen på 175°C.</li>
-          <li>Smält smöret.</li>
-          <li>Vispa ihop socker och ägg i en bunke.</li>
-          <li>Rör ner smör och torra ingredienser.</li>
-          <li>Häll smeten i form.</li>
-          <li>Grädda ca 20 minuter för kladdig konsistens.</li>
+          <li>Sätt på ugnen på 175 °C och lägg bakplåtspapper på två plåtar.</li>
+          <li>Smält 200 g smör och låt det svalna lite.</li>
+          <li>När väl smöret har svalnat kan du hälla i Mixora bakmix i en bunke och blanda ner smöret.</li>
+          <li>Knäck sedan i två ägg och rör om tills det blir en jämn, klibbig deg.</li>
+          <li>Rulla små bollar (lite mindre än en pingisboll) och lägg dem på plåtarna med tolv på vardera plåt. Platta till dem lite på toppen..</li>
+          <li>Mixora rekommenderar att strö lite pärlsocker uppe på var och en så att de blir lite finare och lite godare. </li>
+          <li>Grädda mitt i ugnen i ca 10 min.</li>
         </ol>
       </div>
     </main>

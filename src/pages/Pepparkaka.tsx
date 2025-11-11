@@ -31,22 +31,23 @@ export default function Pepparkaka() {
       <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
         <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
         <ul className="space-y-1 text-lg">
-          <li>100 g smör</li>
-          <li>2.5 dl socker</li>
-          <li>2 ägg</li>
-          <li>1.5 dl vetemjöl</li>
-          <li>4 msk kakao</li>
-          <li>1 tsk vaniljsocker</li>
+          <li>125 g smör</li>
+          <li>3 ägg</li>
+          <li>1 dl mjölk</li>
+          <li>Ströbröd</li>
+          <li>Pepparkakssockerkaksmixen</li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Gör så här</h2>
         <ol className="list-decimal list-inside space-y-2 text-lg">
-          <li>Sätt ugnen på 175°C.</li>
-          <li>Smält smöret.</li>
-          <li>Vispa ihop socker och ägg i en bunke.</li>
-          <li>Rör ner smör och torra ingredienser.</li>
-          <li>Häll smeten i form.</li>
-          <li>Grädda ca 20 minuter för kladdig konsistens.</li>
+          <li>Sätt på ugnen på 180 grader.</li>
+          <li>Smörj och bröa en sockerkaksform, ca 1.5 liter.</li>
+          <li>Smält smöret och låt det svalna lite. .</li>
+          <li>Knäck i äggen i en bunke och vispa tills det är pösigt.</li>
+          <li>Häll sedan i Mixora bakmix i bunken och rör om lite. </li>
+          <li>Därefter tillsätter du smöret och mjölken och vispar ihop allt till en slät smet.</li>
+          <li>Häll smeten i din form.</li>
+          <li>Grädda längst ner i ugnen i ca 38 min.</li>
         </ol>
       </div>
     </main>

@@ -31,22 +31,21 @@ export default function Kladdkaka() {
       <div className="bg-white/10 p-6 rounded-lg border border-white/20 backdrop-blur-md">
         <h2 className="text-2xl font-semibold mb-4">Ingredienser</h2>
         <ul className="space-y-1 text-lg">
-          <li>100 g smör</li>
-          <li>2.5 dl socker</li>
+          <li>100 g smör </li>
           <li>2 ägg</li>
-          <li>1.5 dl vetemjöl</li>
-          <li>4 msk kakao</li>
-          <li>1 tsk vaniljsocker</li>
+          <li>Ev ströbröd</li>
+          <li>Kladdkakemixen</li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Gör så här</h2>
         <ol className="list-decimal list-inside space-y-2 text-lg">
-          <li>Sätt ugnen på 175°C.</li>
-          <li>Smält smöret.</li>
-          <li>Vispa ihop socker och ägg i en bunke.</li>
-          <li>Rör ner smör och torra ingredienser.</li>
-          <li>Häll smeten i form.</li>
-          <li>Grädda ca 20 minuter för kladdig konsistens.</li>
+          <li>Sätt på ugnen på 200 °C.</li>
+          <li>Smörj och bröa en form med löstagbar kant, ca 24 cm i diameter (en vanlig kladdkakeform) eller spänn fast ett bakplåtspapper på botten.</li>
+          <li>Smält smöret och låt det svalna lite.</li>
+          <li>Häll sedan Mixora bakmix i en bunke och bland i två ägg så gott det går. (Om du vill ha en lite fluffigare kaka kan du vispa äggen för sig innan du blandar i dem med bakmixen)</li>
+          <li>Tillsätt sedan i smöret och blanda försiktigt tills det blir en jämn smet och häll över det i formen.</li>
+          <li>Grädda mitt i ugnen i ca 12 min (Här kan du variera tiden beroende på hur kladdig du vill ha din kladdkaka).</li>
+          <li>Mixora rekommenderar att sikta lite florsocker uppe på kakan samt att den ska serveras med grädde. </li>
         </ol>
       </div>
     </main>
