@@ -11,6 +11,10 @@ import NotFound from "./pages/NotFound";
 import Kladdkaka from "./pages/Kladdkaka";
 import Pepparkaka from "./pages/Pepparkaka";
 import Kanelcoockie from "./pages/Kanelcoockie";
+
+// ✅ Import the React version of Vercel Analytics
+import { Analytics } from "@vercel/analytics/react";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -20,15 +24,18 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
- <Routes>
-  <Route path="/" element={<Index />} />
-  <Route path="/omoss" element={<OmOss />} />
-  <Route path="/product/:id" element={<ProductDetail />} />
-  <Route path="/kladdkaka-recept" element={<Kladdkaka />} />
-  <Route path="/pepparkaka" element={<Pepparkaka />} />
-  <Route path="/kanelcoockie" element={<Kanelcoockie />} />
-  <Route path="*" element={<NotFound />} />
-</Routes>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/omoss" element={<OmOss />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/kladdkaka-recept" element={<Kladdkaka />} />
+          <Route path="/pepparkaka" element={<Pepparkaka />} />
+          <Route path="/kanelcoockie" element={<Kanelcoockie />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+
+        {/* ✅ Add Analytics here, inside BrowserRouter but outside Routes */}
+        <Analytics />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
