@@ -20,10 +20,14 @@ export const Footer = () => {
     <footer className="bg-primary text-primary-foreground py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
-          {/* Company Info */}
+          {/* Företagsinfo */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={mixoraLogo} alt="Mixora UF" className="w-12 h-12 rounded-full bg-white/10 p-1 object-cover" />
+              <img
+                src={mixoraLogo}
+                alt="Mixora UF"
+                className="w-12 h-12 rounded-full bg-white/10 p-1 object-cover"
+              />
               <h3 className="font-bold text-xl">Mixora UF</h3>
             </div>
             <p className="text-primary-foreground/80 text-sm">
@@ -31,27 +35,27 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Snabblänkar */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Snabblänkar</h4>
             <nav className="flex flex-col gap-3">
               <Button
                 variant="link"
-                className="text-primary-foreground/80 hover:text-accent transition-colors p-0 h-auto justify-start text-sm"
+                className="text-primary-foreground/80 hover:text-accent p-0 h-auto justify-start text-sm"
                 onClick={() => scrollToSection("hero")}
               >
                 Hem
               </Button>
               <Button
                 variant="link"
-                className="text-primary-foreground/80 hover:text-accent transition-colors p-0 h-auto justify-start text-sm"
+                className="text-primary-foreground/80 hover:text-accent p-0 h-auto justify-start text-sm"
                 onClick={() => scrollToSection("products")}
               >
                 Våra Produkter
               </Button>
               <Button
                 variant="link"
-                className="text-primary-foreground/80 hover:text-accent transition-colors p-0 h-auto justify-start text-sm"
+                className="text-primary-foreground/80 hover:text-accent p-0 h-auto justify-start text-sm"
                 onClick={() => scrollToSection("team")}
               >
                 Vårt Team
@@ -65,7 +69,7 @@ export const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact Info */}
+          {/* Kontakt */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Kontakt</h4>
             <div className="space-y-3">
@@ -73,7 +77,7 @@ export const Footer = () => {
                 <Mail className="h-4 w-4 mt-0.5 text-primary-foreground/60" />
                 <a
                   href="mailto:mixorauf@gmail.com"
-                  className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
+                  className="text-primary-foreground/80 hover:text-accent text-sm"
                 >
                   mixorauf@gmail.com
                 </a>
@@ -82,14 +86,16 @@ export const Footer = () => {
                 <Phone className="h-4 w-4 mt-0.5 text-primary-foreground/60" />
                 <a
                   href="tel:0704693042"
-                  className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
+                  className="text-primary-foreground/80 hover:text-accent text-sm"
                 >
                   070 469 30 42
                 </a>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 text-primary-foreground/60" />
-                <span className="text-primary-foreground/80 text-sm">Slånvägen 4, 513 35 Fristad</span>
+                <span className="text-primary-foreground/80 text-sm">
+                  Slånvägen 4, 513 35 Fristad
+                </span>
               </div>
             </div>
           </div>
@@ -100,65 +106,65 @@ export const Footer = () => {
             <nav className="flex flex-col gap-3">
               <Button
                 variant="link"
-                className="text-primary-foreground/80 hover:text-accent transition-colors p-0 h-auto justify-start text-sm"
+                className="text-primary-foreground/80 hover:text-accent p-0 h-auto justify-start text-sm"
                 onClick={() => scrollToSection("contact")}
               >
                 Kontakta Oss
               </Button>
-              <Button
-      variant="link"
-      className="text-primary-foreground/80 hover:text-accent transition-colors p-0 h-auto justify-start text-sm"
-      onClick={() => navigate("/support")}
-    >
-      Supporta Oss
-    </Button>
             </nav>
           </div>
-          {/* Sociala Medier */}
-<div>
-  <h4 className="font-semibold text-lg mb-4">Sociala Medier</h4>
-  <nav className="flex flex-col gap-3">
-    <a
-      href="https://www.instagram.com/mixorauf/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
-    >
-      Instagram
-    </a>
-    <a
-      href="https://www.facebook.com/people/Mixora-UF/pfbid02tSdDZdJAvYmWXuvWKjSYJSuh28u2hNFpFFCpsdSfhtpyir7okTSau4JMGVnJ2ULVl/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
-    >
-      Facebook
-    </a>
-  </nav>
-</div>
-        </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-primary-foreground/20">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-primary-foreground/70">
-              © {new Date().getFullYear()} Mixora UF. Alla rättigheter förbehållna.
-            </p>
-            <p className="text-sm text-primary-foreground/70">
-              Hemsida skapad i samarbete med{" "}
+          {/* Sociala Medier */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Sociala Medier</h4>
+            <nav className="flex flex-col gap-3">
               <a
-                href="https://www.linkedin.com/in/adam-sethson-7b9844268"
+                href="https://www.instagram.com/mixorauf/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-accent transition-colors font-semibold"
+                className="text-primary-foreground/80 hover:text-accent text-sm"
               >
-                Adam Sethson
-
-                
+                Instagram
               </a>
-            </p>
+              <a
+                href="https://www.facebook.com/people/Mixora-UF/pfbid02tSdDZdJAvYmWXuvWKjSYJSuh28u2hNFpFFCpsdSfhtpyir7okTSau4JMGVnJ2ULVl/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground/80 hover:text-accent text-sm"
+              >
+                Facebook
+              </a>
+            </nav>
           </div>
-          
+        </div>
+
+        {/* Nedre rad */}
+        <div className="pt-8 border-t border-primary-foreground/20 text-center md:text-left space-y-1">
+          <p className="text-sm text-primary-foreground/70">
+            © {new Date().getFullYear()} Mixora UF. Alla rättigheter förbehållna.
+          </p>
+          <p className="text-sm text-primary-foreground/70">
+            Hemsida skapad i samarbete med{" "}
+            <a
+              href="https://www.linkedin.com/in/adam-sethson-7b9844268"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-accent font-semibold"
+            >
+              Adam Sethson
+            </a>
+          </p>
+          <p className="text-sm text-primary-foreground/70">
+            Hemsidan programmerad av{" "}
+            <a
+              href="https://www.linkedin.com/in/hassan-haydar-808a17391/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-accent font-semibold"
+            >
+              Hassan Haydar
+            </a>
+          </p>
         </div>
       </div>
     </footer>

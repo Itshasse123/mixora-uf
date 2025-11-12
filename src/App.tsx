@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import OmOss from "./pages/OmOss";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
-import Support from "./pages/Support";
 import Kladdkaka from "./pages/Kladdkaka";
 import Pepparkaka from "./pages/Pepparkaka";
 import Kanelcoockie from "./pages/Kanelcoockie";
@@ -25,7 +24,6 @@ const App = () => (
   <Route path="/" element={<Index />} />
   <Route path="/omoss" element={<OmOss />} />
   <Route path="/product/:id" element={<ProductDetail />} />
-  <Route path="/support" element={<Support />} />
   <Route path="/kladdkaka-recept" element={<Kladdkaka />} />
   <Route path="/pepparkaka" element={<Pepparkaka />} />
   <Route path="/kanelcoockie" element={<Kanelcoockie />} />

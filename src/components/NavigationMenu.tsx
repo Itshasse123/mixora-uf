@@ -37,23 +37,25 @@ export const NavigationMenu = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button 
-          size="lg" 
+        <Button
+          size="lg"
           className="fixed top-4 left-4 z-50 shadow-lg"
           aria-label="Öppna meny"
         >
           <Menu className="h-6 w-6" />
         </Button>
       </SheetTrigger>
+
       <SheetContent side="left">
         <SheetHeader className="flex flex-row items-center gap-3">
-          <img 
-            src={mixoraLogo} 
-            alt="Mixora UF" 
+          <img
+            src={mixoraLogo}
+            alt="Mixora UF"
             className="w-12 h-12 rounded-full bg-background p-1"
           />
           <SheetTitle>Meny</SheetTitle>
         </SheetHeader>
+
         <nav className="flex flex-col gap-4 mt-8">
           <Button
             variant="ghost"
@@ -62,6 +64,7 @@ export const NavigationMenu = () => {
           >
             Hem
           </Button>
+
           <Button
             variant="ghost"
             className="justify-start text-lg"
@@ -69,6 +72,7 @@ export const NavigationMenu = () => {
           >
             Våra Produkter
           </Button>
+
           <Button
             variant="ghost"
             className="justify-start text-lg"
@@ -76,6 +80,7 @@ export const NavigationMenu = () => {
           >
             Vårt Team
           </Button>
+
           <Button
             variant="ghost"
             className="justify-start text-lg"
@@ -83,6 +88,7 @@ export const NavigationMenu = () => {
           >
             Kontakta Oss
           </Button>
+
           <Button
             variant="ghost"
             className="justify-start text-lg"
@@ -93,18 +99,10 @@ export const NavigationMenu = () => {
           >
             Om Oss
           </Button>
-          <Button
-  variant="ghost"
-  className="justify-start text-lg"
-  onClick={() => {
-    navigate("/support");
-    setOpen(false);
-  }}
->
-  Supporta Oss
-</Button>
         </nav>
       </SheetContent>
     </Sheet>
   );
 };
+
+export default NavigationMenu;
