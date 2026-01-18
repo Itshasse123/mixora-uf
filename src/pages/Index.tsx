@@ -60,7 +60,7 @@ const Index = () => {
 
   const products = [
     { id: 1, name: "Kladdkaka", slug: "brookie", description: "Allt du behöver för perfekta chokladkakor och brownies. Innehåller premium-chokladchips, kakao och recept.", price: "79 kr", images: [productChocolate, Chokladbild] },
-    { id: 2, name: "Kanelbulle cookie", slug: "kanelbulle-kaka", description: "Klassiska ingredienser för ljuvliga vaniljbakverk. Inkluderar äkta vanilj, smör och detaljerade recept.", price: "99 kr", images: [productVanilla, Kanelbild] },
+    { id: 2, name: "Kanelbullekaka", slug: "kanelbulle-kaka", description: "Klassiska ingredienser för ljuvliga vaniljbakverk. Inkluderar äkta vanilj, smör och detaljerade recept.", price: "99 kr", images: [productVanilla, Kanelbild] },
     { id: 3, name: "Pepparkakssockerkaka", slug: "mjuk-pepparkaka", description: "Det perfekta paketet för nybörjare. Komplett uppsättning med ingredienser, verktyg och steg-för-steg guide.", price: "99 kr", images: [productStarter, Pepparkaksbild] },
   ];
 
