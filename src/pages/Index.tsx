@@ -24,37 +24,71 @@ import Pepparkaksbild from "@/assets/perpparkaksbild.jpg";
 import Kanelbild from "@/assets/kanelbild.jpg";
 
 // IMAGE CAROUSEL COMPONENT
-export const ImageCarousel = ({ images }: { images: string[] }) => {
+import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+type ImageCarouselProps = {
+  images: string[];
+};
+
+export const ImageCarousel = ({ images }: ImageCarouselProps) => {
   const [index, setIndex] = useState(0);
 
-  const prev = () => setIndex((index - 1 + images.length) % images.length);
-  const next = () => setIndex((index + 1) % images.length);
+  // Preload ALL images direkt
+  useEffect(() => {
+    if (!images?.length) return;
+
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
+
+  // Reset index om images ändras
+  useEffect(() => {
+    setIndex(0);
+  }, [images]);
+
+  if (!images?.length) return null;
+
+  const prev = () => {
+    setIndex((i) => (i - 1 + images.length) % images.length);
+  };
+
+  const next = () => {
+    setIndex((i) => (i + 1) % images.length);
+  };
 
   return (
     <div className="relative w-full h-full overflow-hidden group">
       <img
+        key={images[index]}
         src={images[index]}
-        alt="product"
-        className="w-full h-full object-cover transition-opacity duration-500 opacity-100"
+        alt={`product-image-${index}`}
+        loading="eager"
+        className="w-full h-full object-cover transition-opacity duration-300"
       />
 
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+        aria-label="Previous image"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition"
       >
         <ChevronLeft />
       </button>
 
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition"
+        aria-label="Next image"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition"
       >
         <ChevronRight />
       </button>
     </div>
   );
 };
-
 const Index = () => {
   const { toast } = useToast();
 
