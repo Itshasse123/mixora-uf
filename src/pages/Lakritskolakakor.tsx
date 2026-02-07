@@ -33,7 +33,7 @@ export default function Lakritskolakakor() {
         <ul className="space-y-1 text-lg">
           <li>200 g smör</li>
           <li>1 msk ljus sirap</li>
-          <li>Lakritskolakakomixen</li>
+          <li>Lakritskolakakmixen</li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-8 mb-4">Gör så här</h2>
