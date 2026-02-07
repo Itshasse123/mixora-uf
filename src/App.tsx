@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 import Kladdkaka from "./pages/Kladdkaka";
 import Pepparkaka from "./pages/Pepparkaka";
 import Kanelcoockie from "./pages/Kanelcoockie";
-import Godkaka from "./pages/Godkaka";
+import kladdkakecookies from "./pages/kladdkakecookies";
 
 // ✅ Import the React version of Vercel Analytics
 import { Analytics } from "@vercel/analytics/react";
