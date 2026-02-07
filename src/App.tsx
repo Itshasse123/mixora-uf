@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 import Kladdkaka from "./pages/Kladdkaka";
 import Pepparkaka from "./pages/Pepparkaka";
 import Kanelcoockie from "./pages/Kanelcoockie";
-import kladdkakecookies from "./pages/kladdkakecookies";
+import Kladdkakecookies from "./pages/kladdkakecookies";
 
 // ✅ Import the React version of Vercel Analytics
 import { Analytics } from "@vercel/analytics/react";
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/kladdkaka-recept" element={<Kladdkaka />} />
           <Route path="/pepparkaka" element={<Pepparkaka />} />
           <Route path="/kanelcoockie" element={<Kanelcoockie />} />
-          <Route path="/kladdkakecookies" element={<kladdkakecookies />} />
+          <Route path="/kladdkakecookies" element={<Kladdkakecookies />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

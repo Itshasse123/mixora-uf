@@ -2,7 +2,7 @@ import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
-export default function kladdkakecookies() {
+export default function Kladdkakecookies() {
   const navigate = useNavigate();
   const location = useLocation();
   const params = new URLSearchParams(location.search);
